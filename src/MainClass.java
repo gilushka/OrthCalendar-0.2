@@ -8,8 +8,10 @@ public class MainClass {
        LocalDate previousPasha = DayCalculate.getPasha(now, false);
        LocalDate nextPasha = DayCalculate.getPasha(now, true);
 
+       LocalDate troica = DayCalculate.getDay(previousPasha, 49, true);
+
         System.out.println(previousPasha);
-        System.out.println(nextPasha);
+        System.out.println(troica);
 
 /*         LocalDate one = LocalDate.of(2019,04,12);
         Period duration = Period.between(one, pasha);

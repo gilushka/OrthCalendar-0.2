@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -26,6 +27,21 @@ public class DayCalculate {
             }
         }
 
+        try {
+            fr.close();
+        } catch (IOException e) {
+            System.out.println("Ошибка закрытия файла");
+        }
+
         return (pasha);
+    }
+
+    public static LocalDate getDay(LocalDate pasha, int interval, boolean old) throws Exception {
+        if (old == true) {
+            return pasha.plusDays(interval);
+        }
+        else {
+            return pasha.minusDays(interval);
+        }
     }
 }
