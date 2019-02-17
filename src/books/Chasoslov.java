@@ -1,4 +1,4 @@
-package Books;
+package books;
 
 public class Chasoslov {
 }
