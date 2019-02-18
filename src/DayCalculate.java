@@ -1,3 +1,5 @@
+import basic.Parameters;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -5,7 +7,7 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class DayCalculate {
-    public static LocalDate getPasha(LocalDate date, boolean isPreviousPasha) throws Exception {
+    public LocalDate getPasha(LocalDate date, boolean isPreviousPasha) throws Exception {
         File pashalia = new File(Parameters.DATA_FILES_PATH + "pashalia.data");
         LocalDate pasha = LocalDate.parse("1900-01-01");
 
@@ -35,6 +37,8 @@ public class DayCalculate {
 
         return (pasha);
     }
+
+    public
 
     public static LocalDate getDay(LocalDate pasha, int interval, boolean old) throws Exception {
         if (old == true) {

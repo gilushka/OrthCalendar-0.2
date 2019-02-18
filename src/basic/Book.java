@@ -1,5 +1,6 @@
 package basic;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 public class Book {
@@ -23,6 +24,10 @@ public class Book {
     // Определить через обобщения (через T)?
     public String getStih (int num) {
         return null;
+    }
+
+    public DayOfWeek getDayOfWeek(LocalDate date) {
+        return date.getDayOfWeek();
     }
 
 /*    Book (int i, int j) {
