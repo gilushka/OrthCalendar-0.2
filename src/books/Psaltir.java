@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Psaltir extends Book {
 
     public Psaltir (LocalDate date, String sericeName) throws FileNotFoundException {
-        DayOfWeek dayOfWeek = getDayOfWeek(date);
+//        DayOfWeek dayOfWeek = getDayOfWeek(date);
 
         File psaltir = new File(Parameters.DATA_FILES_PATH + "psaltir.data");
 

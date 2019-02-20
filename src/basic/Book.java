@@ -26,9 +26,7 @@ public class Book {
         return null;
     }
 
-    public DayOfWeek getDayOfWeek(LocalDate date) {
-        return date.getDayOfWeek();
-    }
+
 
 /*    Book (int i, int j) {
         this.i = i * 3;
