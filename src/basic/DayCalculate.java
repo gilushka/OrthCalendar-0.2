@@ -1,3 +1,5 @@
+package basic;
+
 import basic.Parameters;
 
 import java.io.File;
@@ -8,10 +10,29 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class DayCalculate {
-    LocalDate date;
-    LocalDate previousPasha;
-    LocalDate nextPasha;
-    DayOfWeek dayOfWeek;
+    private LocalDate date;
+    private LocalDate previousPasha;
+    private LocalDate nextPasha;
+    private DayOfWeek dayOfWeek;
+
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public LocalDate getPreviousPasha() {
+        return previousPasha;
+    }
+
+    public LocalDate getNextPasha() {
+        return nextPasha;
+    }
+
+    public DayOfWeek getDayOfWeek() {
+        return dayOfWeek;
+    }
+
+
 //    LocalDate pasha = LocalDate.parse("1900-01-01");
 
     /**

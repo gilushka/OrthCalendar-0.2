@@ -1,14 +1,17 @@
 package services;
 
-import java.time.DayOfWeek;
+import basic.DayCalculate;
+
 import java.time.LocalDate;
+
 
 public class Chasy {
     LocalDate date;
     LocalDate nextPasha;
+    DayCalculate dayCalculate;
 
-    Chasy (LocalDate date, LocalDate nextPasha) {
-        this.date = date;
-        this.nextPasha = nextPasha;
+    Chasy (DayCalculate dayCalculate) {
+        this.dayCalculate = dayCalculate;
+
     }
 }
