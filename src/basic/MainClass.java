@@ -1,20 +1,23 @@
 package basic;
 
+import services.*;
+
 import java.time.LocalDate;
 import java.time.Period;
 
 public class MainClass {
-    private DayCalculate dc;
-
     public static void main(String[] args) throws Exception {
         LocalDate now = LocalDate.now();
+        String serviceName = "pervyChas";
         DayCalculate dayCalculate = new DayCalculate(now);
+
         DayCalculate dc = dayCalculate;
+        Chasy chasy = new Chasy(serviceName, dayCalculate);
     }
 
-    public DayCalculate getDayCalculate() {
+/*    public DayCalculate getDayCalculate() {
         return dc;
-    }
+    }*/
 
 
 //       LocalDate troica = basic.DayCalculate.getDay(previousPasha, 49, true);

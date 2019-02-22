@@ -32,7 +32,6 @@ public class DayCalculate {
         return dayOfWeek;
     }
 
-
 //    LocalDate pasha = LocalDate.parse("1900-01-01");
 
     /**
